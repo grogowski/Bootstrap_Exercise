@@ -9,3 +9,43 @@
 .navbar-collapse{ justify-content: flex-end;}
 
 .navbar-toggler{  background:#fff !important;}
+
+.header{
+ background-image: url('../images/headerback.jpg');
+ background-attachment: fixed;
+ background-size: cover;
+ background-position: center;
+}
+
+.overlay{
+ position: absolute;
+ min-height: 100%;
+ min-width: 100%;
+ left: 0;
+ top: 0;
+ background: rgba(244, 244, 244, 0.79);
+}
+
+.description{
+    position: absolute;
+    top: 30%;
+    margin: auto;
+    padding: 2em;
+}
+
+.description h1{
+ color: blue ;
+}
+
+.description p{
+ color:#666;
+ font-size: 1rem;
+ line-height: 1.5;
+ width: 50%;
+}
+
+.description button{
+ border:1px  solid #F97300;
+ background: blue;
+ color:#fff;
+}
