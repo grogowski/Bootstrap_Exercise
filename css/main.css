@@ -1,53 +1,88 @@
-.navbar{ background: blue;}
-
-.nav-link , .navbar-brand{ color: #f4f4f4;}
-
-.nav-link{ margin-right: 1em !important;}
-
-.nav-link:hover{ background: #f4f4f4; color: blue; }
-
-.navbar-brand:hover{ background: #f4f4f4; color: blue; }
-
-.navbar-collapse{ justify-content: flex-end;}
-
-.navbar-toggler{  background:#fff !important;}
-
-.header{
- background-image: url('../images/headerback.jpg');
- background-attachment: fixed;
- background-size: cover;
- background-position: center;
+body {
+ overflow-x: hidden; /*--right gutter fix--*/
 }
 
-.overlay{
+.navbar-brand img {
+ height: 2rem;
+ font-family: sans-serif;
+}
+
+.home-inner {
+ background-image: url("../images/milky-way.jpg");
+}
+
+.caption {
+ width: 100%;
+ max-width: 100%;
  position: absolute;
- min-height: 100%;
- min-width: 100%;
- left: 0;
+ top: 40%;
+ z-index: 1;
+}
+
+.caption h2{
+ color: white;
+ text-transform: uppercase;
+ font-size: 2.5rem;
+}
+
+#start_button {
+ border-width: medium;
+ text-transform:  uppercase;
+ border-radius: 0;
+}
+
+h3.heading {
+ text-align: center;
+ font-size: 2rem;
+ text-transform: uppercase;
+ margin-bottom: 2rem;
+}
+
+img.portfolio {
+ max-width: 100%;
+}
+
+.no-padding .col-md-6{
+ padding: 0;
+}
+
+.footer .row {
+ color: white;
+}
+
+.footer img {
+ height: 2rem;
+}
+
+/*--- iOS Landing Page Fix --*/
+.landing {
+ position: relative;
+ width: 100%;
+ height: 100vh;
+ display: table;
+ background: #E9ECEF;
+ z-index: -1;
+}
+
+.home-wrap {
+ clip: rect(0, auto, auto, 0);
+ position: absolute;
  top: 0;
- background: rgba(244, 244, 244, 0.79);
+ left: 0;
+ width: 100%;
+ height: 100%;
 }
 
-.description{
-    position: absolute;
-    top: 30%;
-    margin: auto;
-    padding: 2em;
-}
-
-.description h1{
- color: blue ;
-}
-
-.description p{
- color:#666;
- font-size: 1rem;
- line-height: 1.5;
- width: 50%;
-}
-
-.description button{
- border:1px  solid #F97300;
- background: blue;
- color:#fff;
+.home-inner {
+ position: fixed;
+ display: table;
+ top: 0;
+ left: 0;
+ width: 100%;
+ height: 100%;
+ background-size: cover;
+ background-position: center center;
+ -webkit-transform: translateZ(0);
+ transform: translateZ(0);
+ will-change: transform;
 }
